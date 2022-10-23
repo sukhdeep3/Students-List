@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student List</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      #form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 5rem;
+        width: 60%;
+        margin: 0;
+      }
+
+      .container {
+        display: flex;
+        align-items: left;
+        column-gap: 10rem;
+      }
+
+      #aside {
+        width: 40%;
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      span {
+        background-color: yellow;
+      }
+
+      @media screen and (max-width: 480px) {
+        #form {
+            display: flex;
+            flex-direction: column;
+          width: 60%;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+          column-gap: 4rem;
+        }
+        #aside{
+            width: 40%;
+        }
+      }
+      @media screen and (min-width: 480px )and (max-width: 768px) {
+        body{
+            width: 100%;
+        }
+        #form {
+          width: 60%;
+        }
+        .container {
+          column-gap: 4rem;
+        }
+        #aside{
+            width: 40%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="form">
+      <h2>Add Student Data</h2>
+
+      <section class="container">
+        <label class="heading">Roll No:</label>
+        <input id="roll" class="require" type="text" name="roll" />
+      </section>
+
+      <section class="container">
+        <label class="heading">Name:</label>
+        <input id="name" class="require" type="text" name="name" />
+      </section>
+
+      <section class="container">
+        <label class="heading">Marks:</label>
+        <input id="marks" class="require" type="text" name="marks" />
+      </section>
+
+      <button id="btn">Add Details</button>
+    </section>
+
+    <aside id="aside">
+      <ul id="list"></ul>
+    </aside>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="student.js"></script>
+  </body>
+</html>
