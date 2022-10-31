@@ -1,3 +1,3 @@
 ﻿# Students-List
 
-URL: https://sukhdeepsukh589.github.io/Students-List/student
+URL: https://sukhdeep3.github.io/Students-List/student
